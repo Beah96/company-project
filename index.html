@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <title>Kenzie Empresas : : Home Page</title>
+</head>
+<body>
+   <header>
+        <section class="logo__section">
+            <img src="./src/assets/img/Ellipse 1.svg" alt="Blue point">
+            <img src="./src/assets/img/Kenzie Empresas.svg" alt="Company name">
+        </section>
+
+        <section class="button__section">
+            <button class="loginPage__button">Login</button>
+            <button class="registerPage__button">Cadastro</button>
+        </section>
+   </header> 
+    
+   <main>
+        <section class="image__section">
+            <img src="./src/assets/img/Rectangle 6.svg" alt="Business people working">
+        </section>
+
+        <section class="company__section">
+            <div class="select__div">
+              <select name="sector" id="sectorSelection">
+                    <option value="" disabled selected>Selecione um setor</option>
+                    <option value="all">Todos os Setores</option>
+                </select>   
+        
+            </div>
+           
+
+            <div class="company__div">
+                <h2>Lista de Empresas </h2>
+                <ul class="company__list">
+                </ul>
+            </div>
+
+        </section>
+   </main>
+
+   <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>

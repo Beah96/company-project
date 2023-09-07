@@ -1,0 +1,113 @@
+@import url(globalStyles.css);
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image__section{
+    height: 854px;
+    width: 550px;
+}
+.image__section>img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.company__section{
+    height: 854px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.select__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-brand-1);
+    height: 52.180152893066406px;
+    width: 550px;
+}
+#sectorSelection{
+    appearance: none;
+    width: 90%;
+    background:url(../assets/img/Polygon\ 1.svg) no-repeat center right var(--color-brand-1);
+    color: white;
+    font-size: var(--font-size-2);
+}
+#sectorSelection:hover{
+    cursor: pointer;
+}
+
+
+.company__div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 734px;
+    width: 510px;
+    padding: 5px 0;
+    box-shadow: 0px 0px 20px 0px rgba(73,80,87,0.34);
+    padding: 20px;
+}
+.company__div>h2{
+    font-size: var(--font-size-1);
+    font-weight: 700;
+}
+.company__list{
+    height: auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.company__list::-webkit-scrollbar {
+    width: 12px; 
+}
+  
+.company__list::-webkit-scrollbar-track {
+    background: var(--color-grey-4);
+}
+  
+.company__list::-webkit-scrollbar-thumb {
+    background-color:var(--color-brand-2);
+    border-radius: 20px;
+    border: 3px solid var(--color-grey-4); 
+}
+
+.company__li{
+    height: 75px;
+    width: 442px;
+    border: 2px solid var(--color-brand-2);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 15px 20px;
+    gap: 10px;
+}
+
+
+.company__title{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+}
+
+.company__category__p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-brand-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    height: 32px;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid var(--color-brand-1);
+    border-radius: 255px;
+}

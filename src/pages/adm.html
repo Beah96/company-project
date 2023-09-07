@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/adm.css">
+    <link rel="stylesheet" href="../styles/modais.css">
+    <title>Dashboard : : Adm</title>
+</head>
+<body>
+    <header>
+        <section class="logo__section">
+            <img src="../assets/img/Ellipse 1.svg" alt="Blue point">
+            <img src="../assets/img/Kenzie Empresas.svg" alt="Company name">
+        </section>
+
+        <section class="button__section">
+            <button class="logout__button">Logout</button>
+        </section>
+   </header> 
+
+   <main class="admPage__main">
+        <div class="company__div">
+            <span class="company__span">
+                <select name="sector" id="companySelection">
+                    <option value="" disabled selected>Selecione uma Empresa</option>
+                    <option value="all">Todos as Empresas</option>
+                </select>
+            </span>
+        </div>
+
+        <section class="department__section">
+            <div class="department__div">
+                <h2 class="department__title">Departamentos</h2>
+                <button class="department__button--create">Criar</button>
+            </div>
+
+            <div class="departmentCard__div">
+                <ul class="departmentCard__list">
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="employee__section">
+            <div class="employee__div">
+                <h2 class="employee__title">Usuários Cadastrados</h2>
+            </div>
+
+            <div class="employeeCard__div">
+                <ul class="employeeCard__list">
+
+                </ul>
+            </div>
+
+        </section>
+
+   </main>
+    <script type="module" src="../scripts/adm.js"></script> </script>
+</body>
+
+<dialog id="createDepartment">
+    <h2 class="createDepartment__title">Criar Departamento</h2>
+    <button class="closeModal__button">X</button>
+    <div class="createDepartment__div">
+        <p class="resultCreate__p"></p>
+        <input type="text" id="newDepartmentName" placeholder="Nome do Departamento" required>
+        <input type="text" id="newDepartmentDescription" placeholder="Descrição" required>
+        <select name="sector" id="companySelectionForDepartment" required>
+            <option value="" disabled selected>Selecione uma Empresa</option>
+        </select>
+        <button class="create__button" >Criar</button>
+    </div>
+</dialog >
+
+<dialog id="visualizeDepartment">
+    <h1 class="visualizeDepartment__title"></h1>
+    <button class="visualizeDepartment__button--close">X</button>
+    <h4 class="visualizeDepartment__description__title"></h4>
+    <p class="visualizeDepartment__company__p"></p>
+    <p class="resultDepartmentVisualize__p"></p>
+    <div class="hireEmployee__div">
+        <select name="sector" id="hireEmployeeList" required>
+            <option value="" disabled selected>Selecione Usuário</option>
+        </select>
+        <button class="hireEmployee__button" >Contratar</button>
+    </div>
+
+    <div class="dismissEmployee__div">
+        <ul class="dismissEmployee__list">
+        
+        </ul>
+    </div>
+</dialog>
+
+<dialog id="editDepartment">
+    <h1 class="editDepartment__title">Editar Departamento</h1>
+    <button class="editDepartment__button--close">X</button>
+    <p class="resultDepartmentEdit__p"></p>
+    <div class="editDepartment__div">
+
+        <input type="text" name="updateDepartment" id="updateDepartmentName" placeholder="Nome" required>
+        <input type="text" name="updateDepartment" id="updateDepartmentDescription" required>
+        <button class="updateDepartment__button">Salvar</button>
+    </div>
+</dialog>
+
+<dialog id="deleteDepartment">
+    <h2 class="deleteDepartment__title">Realmente deseja remover o <span class="deleteDepartment__span"></span>  e demitir seus funcionários?</h2>
+    <button class="deleteDepartment__button--close">X</button>
+    <p class="resultDepartmentDelete__p"></p>
+    <button class="deleteDepartment__button">Remover</button>
+</dialog>
+
+<dialog id="editUser">
+    <h1 class="editUser__title">Editar Usuário</h1>
+    <button class="editUser__button--close">X</button>
+    <p class="resultUserEdit__p"></p>
+    <div class="editUser__div">
+        <input type="text" name="updateUser" id="updateUserName" placeholder="Nome">
+        <input type="email" name="updateUser" id="updateUserEmail" placeholder="E-mail">
+        <button class="updateUser__button">Salvar</button>
+    </div>
+</dialog>
+
+<dialog id="deleteUser">
+    <h2 class="deleteUser__title">Realmente deseja remover o usuário <span class="deleteUser__span"></span>?</h2>
+    <button class="deleteUser__button--close">X</button>
+    <p class="resultUserDelete__p"></p>
+    <button class="deleteUser__button">Remover</button>
+</dialog>
+
+</html>

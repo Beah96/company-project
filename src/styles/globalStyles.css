@@ -1,0 +1,74 @@
+*{
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family:'Inter', sans-serif;
+    font-style: inherit;
+    list-style: none;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-brand-1: #0000ee ;
+  --color-brand-2: #3532FF;
+  --color-grey-1: #212529;
+  --color-grey-2: #495057;
+  --color-grey-3: #adb5bd;
+  --color-grey-4: #e9ecef;
+  --color-grey-5: #f1f3f5;
+  --color-grey-6: #ffffff;
+  --color-sucess: #36B37E;
+  --color-error: #FF5630;
+  --color-warning:#FFAB00;
+
+  --font-primary: "Inter", sans-serif;
+
+  --font-size-1: 32px;
+  --font-size-2: 20px;
+  --font-size-3: 16px;
+  --font-size-4: 14px;
+
+  --font-weight-1: 600;
+  --font-weight-2: 500;
+  --font-weight-3: 400;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0 8rem;
+}
+
+.logo__section{
+  display: flex;
+  align-items: center;
+  gap: 15px
+}
+
+
+.loginPage__button,.registerPage__button,.homePage__button,.logout__button{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  height: 48px;
+  width: 142px;
+  margin-right: 12px;
+  color: var(--color-brand-1);
+  background-color: var(--color-grey-6);
+  border: 2px solid var(--color-brand-1); 
+  cursor: pointer;
+}
+
+.loginPage__button:hover,.registerPage__button:hover,.homePage__button:hover, .logout__button:hover{
+  background-color: var(--color-brand-1);
+  color: var(--color-grey-6);
+}
+
+.loginPage__button:focus,.registerPage__button:focus,.homePage__button:focus,.logout__button:focus{
+  background-color: var(--color-brand-2);
+
+}

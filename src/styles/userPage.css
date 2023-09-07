@@ -1,0 +1,88 @@
+@import url(globalStyles.css);
+
+.userPage__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap:20px;
+}
+.profile__section{
+    height: 137px;
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap:10px;
+    border: 2px solid var(--color-grey-4);
+    padding-left: 25px;
+
+}
+.profile__title{
+    color: var(--color-grey-1);
+    font-size: 30px;
+    font-weight: 700;
+}
+.profile__description{  
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-grey-2);
+}
+
+.company__section{
+    height: 467px;
+    width: 1180px;
+    background-color: var(--color-grey-5);
+}
+.noCompany__div{
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--color-grey-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noCompany__title{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.company__div{
+    height: 78px;
+    width: 1178px;
+    background-color: var(--color-brand-1);
+    border: 3px solid var(--color-brand-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company__title{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-grey-6);
+}
+
+.employee__div{
+    width: 100%;
+    
+}
+.employee__ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+}
+.employee__li{
+    height: 95px;
+    width: 318px;
+    border: 2px solid var(--color-brand-1);
+    background-color: var(--color-grey-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.employee__title{
+    font-size: 20px;
+    font-weight: 700;
+}
